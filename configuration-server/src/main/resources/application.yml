@@ -1,0 +1,24 @@
+server:
+  port: 8888
+  
+#------------------ Using local file system-----------------------------   
+spring:
+  profiles:
+    active:
+    - native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+          - file:///C:/workspace/microservices/configuration-server/src/main/resources/config/{application}
+
+#------------------- Using git -----------------------------------------
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/vatsasharma/config-repo
+#          search-paths: /{application}
+          

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active:
+    - active
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.web: INFO
+#    org.hibernate: ERROR

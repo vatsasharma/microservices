@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active:
+    - active
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+      enabled: true
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    product-service: /product/**
+    customer-service: /customer/**
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR

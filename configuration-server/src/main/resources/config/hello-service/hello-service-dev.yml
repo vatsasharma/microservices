@@ -1,0 +1,2 @@
+server.port: 5001
+tracer.property: "I AM DEV CONFIG"

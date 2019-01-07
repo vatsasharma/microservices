@@ -1,0 +1,15 @@
+#-------------------------- Cloud Config Server config's -----------------------------------
+spring:
+  application:
+    name: hystrix-dashboard
+  profiles:
+    active:
+    - active
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+      enabled: true
+
+management.endpoints.web.exposure.include: hystrix.stream
+      

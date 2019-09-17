@@ -1,0 +1,3 @@
+2019-08-21T21:15:48,417 ERROR [service.impl.UserServiceImpl] [http-nio-8901-exec-1] Error registering user with username : srivatsa
+2019-08-21T21:40:37,497 ERROR [service.impl.UserServiceImpl] [http-nio-8901-exec-1] Error registering user with username : srivatsa
+2019-08-21T21:41:11,579 ERROR [service.impl.UserServiceImpl] [http-nio-8901-exec-4] Error registering user with username : srivatsa

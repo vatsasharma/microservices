@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: login-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: srsharma
+Implementation-Vendor-Id: com.sharma.loginservice
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/login-service
+Created-By: Maven Integration for Eclipse
+

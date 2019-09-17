@@ -1,0 +1,1 @@
+2019-08-22T14:01:03,201 ERROR [service.impl.UserRoleServiceImpl] [http-nio-8901-exec-8] Error adding role : ROLE_ADMIN to user :e64a7073-e40c-4baa-a16a-5c8ab7cd5e22

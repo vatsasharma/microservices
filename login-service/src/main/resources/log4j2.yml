@@ -1,0 +1,35 @@
+# Appenders and Loggers configuration
+
+Configutation:
+  name: Default
+  Properties:
+    Property:
+      name: log-path
+      value: "logs"
+  Appenders:
+    Console:
+      name: Console_Appender
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+    RollingFile:
+      - name: ROLLING_FILE
+        fileName: ${log-path}/login-service.log
+        filePattern: ${log-path}/%d{yyyy-MM-dd}/login-service-%d{yyyy-MM-dd}.log
+        PatternLayout:
+          Pattern: "%d{ISO8601} %-5p [%c{3}] [%t] %m%n"
+        policies:
+          TimeBasedTriggeringPolicy:
+            interval: 1
+            modulate: true    
+  Loggers:
+      Root:
+        level: info
+        AppenderRef:
+          - ref: Console_Appender
+      Logger:
+        - name: com.sharma.loginservice
+          level: debug
+          AppenderRef:
+            - ref: ROLLING_FILE
+              level: error 
